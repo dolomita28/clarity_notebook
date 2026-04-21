@@ -2,7 +2,7 @@
 Notebook that ingests data from different files of three providers. 
 It merges the result into a dataframe that follows a predifined schema.
 
-#Target
+# Target
 This notebook should process these files and produce a unified view of the data.
 The final result should be a data structure that allows the data science team to access all information for a given movie easily.
 
