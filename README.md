@@ -29,20 +29,20 @@ model_schema = T.StructType([
 ])
 
 # Read - Extract / Transform
-The three providers classes inherit from a BaseProvider class which acts as a "Contract"
-Providers must implement extract and transform functions
-That way, in case of a new provider being added, just add a new class that implements the BaseProvider
+The three providers classes inherit from a BaseProvider class which acts as a "Contract".
+Providers must implement extract and transform functions.
+That way, in case of a new provider being added, just add a new class that implements the BaseProvider.
 
 # Provider's Schema
 Each provider has its own schema following the file structure that's being ingested.
 In case of having to modify any schema, just head to that cell.
 
 # Data frames are merged into a unified one
-Dataframes are combined (unionByName)
+Dataframes are combined (unionByName).
 In case of conflicts (coalesce accross rows) a "_order" priority is applied so the first provider wins or remains.
 
 # Unified dataframe
-The unified dataframe can be then used in a Temporary View or saved to a Delta Table
+The unified dataframe can be then used in a Temporary View or saved to a Delta Table.
 
 
 # Orchestration
